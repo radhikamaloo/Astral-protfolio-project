@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+}
+
+.tabbed{
+    width: 700px;
+    margin: 50px auto;
+}
+.tab{
+    overflow: hidden; 
+    justify-content: center;
+    margin: auto 227px
+}
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 30px;
+    color: bisque;
+  }
+
+.tab button:hover{
+    color: white;
+}
+.active{
+    color: white;
+}
+
+.tabcontent{
+    display: none;
+}
+
+/* card css */
+     #card {
+        display: flex;
+     }
+     #card #text{
+        float: left;
+        width: 50%;
+        height: 353px;
+        align-content: center;
+        justify-content: center;
+          
+      }
+      #card #img{
+        float: left;
+        width: 50%;
+        height: 353px;
+      }
+      
+      #text{
+       padding: 20px;
+       background-color: white;  
+      }
+      #text h1{
+          margin: 110px auto auto;
+      }
+     
+    @media only screen and (max-width :600px){
+          .tab{
+              padding-left: 40px;
+              margin: auto 70px;
+          }
+        .tabbed{
+            width: 450px;
+            margin:  50px auto;
+        }
+          #text{
+              display: none;
+          }
+        .img{
+             height: 50%;
+             margin: 5px 70px;
+             width: 100%
+          }
+          .image img{
+              width: 100%;
+          }
+          #form h2{
+              display: none;
+          }
+      }
+
+      /* gallery css  */
+     
+    #gallery{
+       justify-content: center;
+       text-align: center; 
+       background-color: white;
+       padding: 10px;
+    }
+    .image {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+       grid-column-gap: 15px;
+       row-gap: 15px;
+       margin: 10px;
+    }
+    .image img {
+        width: 98%;
+    }
+
+/*  form css */
+form{
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    margin: 10px;
+
+}
+form h2{
+    margin: 5px;
+}
+form input,textarea{
+   background-color: rgb(241, 232, 232);
+   border-color: transparent;
+   margin: 5px;
+   padding: 5px;
+   box-shadow: white ;
+}
+form button{
+    background-color: black;
+    color: white;
+    padding: 9px;
+    margin: 5px;
+    border: none;
+    font-size: small;
+}
+
+
+
+.tabcontent{
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}
+
+
+
+
+
+
+
+
+

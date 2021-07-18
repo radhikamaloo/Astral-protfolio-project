@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>codedamn Project</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- start writing your code -->
+<div class="tabbed" style="align-items: center;">
+	<div class="tab">
+		<button class="tablinks active" onclick="openTab(event,'card')" ><i class="fa fa-home"></i></button>
+		<button class="tablinks" onclick="openTab(event,'gallery')"><i class="fa fa-folder"></i></button>
+		<button class="tablinks" onclick="openTab(event,'form')"><i class="fa fa-envelope"></i></button>
+		<button class="tablinks" onclick="openTab(event,'')"><i class="fa fa-twitter"></i></button>
+	</div>
+
+	<!---Tab contents-->
+	<div class="tabcontent" id="card">
+		<div  id="text">
+		<h1> Jane Deo </h1>
+		<p>Senior Astral projectnist</p>
+		</div>
+
+		<div class="img">
+		<img src="me.jpg" alt="">
+		</div>
+	</div>
+<div class="tabcontent" id="gallery">
+    <div id="txt">
+    <h2>WORK</h2>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repudiandae aut ab quam tempora nostrum omnis nesciunt maxime aspernatur illum illo porro culpa consequuntur odio amet magni, voluptatem nulla error.</p>
+    <div class="image">
+     <img src="pic01.jpg" alt="">
+     <img src="pic02.jpg" alt="">
+     <img src="pic03.jpg" alt="">
+     <img src="pic04.jpg" alt="">
+     <img src="pic05.jpg" alt="">
+     <img src="pic06.jpg" alt="">
+     <img src="pic07.jpg" alt="">
+     <img src="pic08.jpg" alt="">
+     <img src="pic09.jpg" alt="">
+     <img src="pic10.jpg" alt="">
+     <img src="pic11.jpg" alt="">
+     <img src="pic12.jpg" alt="">
+    </div>
+</div>
+<div class="tabcontent" id="form">
+<form action="">
+	<h2>Contact Me</h2>
+	<input type="text"  placeholder="Name">
+	<input type="email" placeholder="Email"><br>
+	<input type="text" placeholder="Subject"><br>
+	<textarea name="" id="" cols="46" rows="8" placeholder="Message"></textarea><br>
+	<button>Send Message</button>
+</form>
+</div>	
+</div>
+<script>
+function openTab(evt,tabName){
+    var i ,tabcontent ,tablinks;
+
+    tabcontent=document.getElementsByClassName("tabcontent");
+    for(i=0; i< tabcontent.length; i++)
+    {
+        tabcontent[i].style.display ='none';
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for(i=0 ; i < tablinks.length ; i++)
+    {
+        tablinks[i].className = tablinks[i].className.replace("active" , "");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTareget.className += "active";
+}
+</script>
+	</body>
+</html>
