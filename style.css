@@ -87,6 +87,9 @@ body{
           #form h2{
               display: none;
           }
+          form input,textarea{
+              width: 90%;
+          }
       }
 
       /* gallery css  */
@@ -120,6 +123,7 @@ form{
 form h2{
     margin: 5px;
 }
+
 form input,textarea{
    background-color: rgb(241, 232, 232);
    border-color: transparent;
